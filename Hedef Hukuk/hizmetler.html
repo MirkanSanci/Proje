@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler -Hedef Hukuk Bürosu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/hedefhukuklogo.png" type="" />
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+    /* Animasyon */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+   
+   
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      
+    </style>
+</head>
+<body>
+    <nav  class="scroll navbar text-center navbar-expand-lg navbar-light  fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="image/hedefhukuklogo.png" alt="Hedef Hukuk" class="logo-img">
+                <span class="logo-text" style="color: #77d4f4;">Hedef Hukuk Bürosu</span>
+            </a>          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown">Kurumsal</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="hizmetler.html">Hizmetler</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="ekibimiz.html">Ekibimiz</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="iletisim.html">İletişim</a></li>
+
+                <!-- Borç Sorgulama (WhatsApp Hattı) -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white btn  px-3 d-flex align-items-center dropdown-toggle" 
+                       href="#" id="whatsappDropdown" role="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-coins me-2"></i> Borç Ödeme Hattı
+                    </a>                 
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://wa.me/905555555555" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (555) 555 55 55 (Sidar Bey)</a></li>
+                        <li><a class="dropdown-item" href="https://wa.me/904444444444" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (444) 444 44 44</a></li>
+                        <li><a class="dropdown-item" href="https://wa.me/903333333333" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (333) 333 33 33</a></li>
+                    </ul>
+                </li>
+
+                <!-- Telefon Numaraları Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white btn px-3 d-flex align-items-center dropdown-toggle" 
+                       href="#" id="telefonDropdown" role="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-phone me-2"></i> İletişim Hattı
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="tel:+905555555555"><i class="fa-solid fa-phone me-2"></i> 0 (555) 555 55 55</a></li>
+                        <li><a class="dropdown-item" href="tel:+904444444444"><i class="fa-solid fa-phone me-2"></i> 0 (444) 444 44 44</a></li>
+                        <li><a class="dropdown-item" href="tel:+903333333333"><i class="fa-solid fa-phone me-2"></i> 0 (333) 333 33 33</a></li>
+
+                    </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero-sectioncalisma" id="home">
+        <div class="text-center">
+            <p style="font-size: 7.5rem;" class="fw-semibold display-4 hero-text tangerine-bold">Hizmetlerimiz</p>
+            <div id="keywords-container" class="text-light fs-4 tangerine-bold"></div>
+        </div>
+    </section>
+
+
+    <section class="container py-5">
+        <style>
+            .fixed-size-img {
+                width: 100%;
+                height: 420px;
+                object-fit: contain;
+            }
+        </style>
+        <section class="container py-5">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <h3><i class="fas fa-gavel me-2"></i> İcra ve İflas Hukuku</h3>
+                    <p>İcra ve İflas Hukuku, borçlu ve alacaklı arasındaki finansal ilişkileri düzenler. Hukuk büromuz, müvekkillerimize
+                        icra ve iflas süreçlerinde güvenilir ve etkili hukuki danışmanlık hizmetleri sunmaktadır.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/ıcraıflas.jpg" class="img-fluid rounded fixed-size-img" alt="İcra ve İflas Hukuku">
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <h3><i class="fas fa-university me-2"></i> Bankacılık ve Finans Hukuku</h3>
+                    <p>Bankacılık ve Finans Hukuku, finans sektöründeki hukuki süreçleri kapsar. Bankacılık işlemleri, kredi
+                        sözleşmeleri ve finansal ihtilaflar konularında kapsamlı hukuki destek sağlıyoruz.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/bankacılıkvefınans.jpg" class="img-fluid rounded fixed-size-img" alt="Bankacılık ve Finans Hukuku">
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <h3><i class="fas fa-building me-2"></i> Şirketler Hukuku</h3>
+                    <p>Şirketler Hukuku, işletmelerin kuruluşundan yönetimine kadar tüm aşamalarını düzenler. İşletmenizin her adımında
+                        hukuki destek sunarak en iyi çözümleri üretmeye odaklanıyoruz.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/sırketlerhukuku.jpg" class="img-fluid rounded fixed-size-img" alt="Şirketler Hukuku">
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <h3><i class="fas fa-home me-2"></i> Gayrimenkul Hukuku</h3>
+                    <p>Gayrimenkul alım satımı, kira sözleşmeleri ve tapu işlemleri gibi konularda hukuki destek sunuyoruz. Taşınmaz
+                        işlemlerinizde hukuki güvenliği sağlamak için yanınızdayız.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/gayrımenkulhukuk.jpg" class="img-fluid rounded fixed-size-img" alt="Gayrimenkul Hukuku">
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <h3><i class="fas fa-balance-scale me-2"></i> İdare ve Vergi Hukuku</h3>
+                    <p>İdare ve Vergi Hukuku alanında, idari işlemlere karşı itirazlar ve vergi ihtilaflarında müvekkillerimizin
+                        haklarını savunuyoruz. Güncel mevzuata uygun çözümler sunuyoruz.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/vergıhkuku.jpg" class="img-fluid rounded fixed-size-img" alt="İdare ve Vergi Hukuku">
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <h3><i class="fas fa-handshake me-2"></i> Tüketici Hukuku & İş Hukuku</h3>
+                    <p>Tüketici ve İş Hukuku alanlarında, tüketici hakları, işçi alacakları ve iş hukuku ihtilaflarında müvekkillerimize
+                        hukuki danışmanlık hizmetleri sunuyoruz.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/tuketıcıhukuk.jpg" class="img-fluid rounded fixed-size-img" alt="Tüketici Hukuku & İş Hukuku">
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <footer class="text-white pt-5 pb-4" style="background: url('image/eresinyaşammerkezi.png') no-repeat center center; background-size: cover; background-color: rgba(0, 0, 0, 0.7); background-blend-mode: darken;">
+        <div class="container text-center text-md-start">
+            <div class="row d-flex justify-content-between align-items-start gap-4">
+           <!-- Firma Bilgileri -->
+<div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+    <h5 class="text-uppercase fw-bold mb-3">Hedef Hukuk Bürosu</h5>
+    <p>
+        <!-- Adres kısmı tıklanabilir bağlantı ve stil düzenlemesi -->
+        📍 <a href="https://www.google.com/maps/search/?q=Eresin+Ya%C5%9Fam+Merkezi+No%3A10%2F3+A+Blok+Kat%3A16+Daire%3A253+B%C3%BCy%C3%BCk%C3%A7ekmece+%2F+%C4%B0stanbul" target="_blank" style="color: white; text-decoration: none;">Adres: Eresin Yaşam Merkezi No:10/3 A Blok Kat:16 Daire:253 Büyükçekmece / İstanbul</a> <br>
+        <hr>
+        <!-- Telefon numarasına tıklanabilir bağlantı -->
+        <a class="dropdown-item" href="tel:+903333333333" style="color: white; text-decoration: none;">
+            <i class="fa-solid fa-phone me-2"></i>  0 (333) 333 33 33
+        </a>
+        <hr>
+        <!-- E-posta adresine mailto bağlantısı ve stil düzenlemesi -->
+        ✉️ <a href="mailto:info@hedefhukuk.com" style="color: white; text-decoration: none;">E-Posta: info@hedefhukuk.com</a>
+        <hr>
+    </p>
+    <div class="d-flex justify-content-start">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.2797062463974!2d28.626448975859038!3d41.01913617134904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b55f52df02105f%3A0xa9c8283f50cf3565!2sERESIN%20YA%C5%9EAM!5e0!3m2!1str!2str!4v1739446736515!5m2!1str!2str" 
+            width="100%" 
+            height="250" 
+            style="border:0; max-width: 350px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+    
+                <!-- Hızlı Menü -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Hızlı Menü</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Ana Sayfa</a></p>
+                    <p><a href="hakkimizda.html" class="text-white text-decoration-none">Hakkımızda</a></p>
+                    <p><a href="hizmetler.html" class="text-white text-decoration-none">Hizmetlerimiz</a></p>
+                    <p><a href="ekibimiz.html" class="text-white text-decoration-none">Ekibimiz</a></p>
+                    <p><a href="iletisim.html" class="text-white text-decoration-none">İletişim</a></p>
+                </div>
+    
+                <!-- Hizmetlerimiz -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Hizmetlerimiz</h5>
+                    <p><a href="hizmetler.html#icra" class="text-white text-decoration-none">İcra ve İflas Hukuku</a></p>
+                    <p><a href="hizmetler.html#bankacilik" class="text-white text-decoration-none">Bankacılık ve Finans Hukuku</a></p>
+                    <p><a href="hizmetler.html#sirketler" class="text-white text-decoration-none">Şirketler Hukuku</a></p>
+                    <p><a href="hizmetler.html#gayrimenkul" class="text-white text-decoration-none">Gayrimenkul Hukuku</a></p>
+                    <p><a href="hizmetler.html#vergi" class="text-white text-decoration-none">Vergi Hukuku</a></p>
+                </div>  
+            </div>
+        </div>
+    </footer>
+    
+    
+    <div  class="footer-container text-center mt-0">
+        <!-- Sosyal Medya Bağlantıları -->
+        <div class="text-center mt-3">
+           <a href="#" class="text-white me-4"><i class="fa-brands fa-facebook-f"></i></a>
+           <a href="#" class="text-white me-4"><i class="fa-brands fa-instagram"></i></a>
+           <a href="#" class="text-white me-4"><i class="fa-brands fa-linkedin"></i></a>
+       </div>
+       
+       <!-- Telif Hakkı ve Gizlilik Politikası -->
+       <div class="text-center mt-2 ">
+           <p>© 2025 Hedef Hukuk Bürosu. Tüm hakları saklıdır. | <a href="#" class="text-white text-decoration-none">Gizlilik Politikası</a></p>
+       </div>
+       </div>
+    
+    <script src="script.js"></script>
+     
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector("nav");
+            const heroSection = document.querySelector(".hero-sectioncalisma");
+        
+            function updateNavbar() {
+                if (window.scrollY > heroSection.offsetHeight) {
+                    nav.classList.add("scroll");
+                } else {
+                    nav.classList.remove("scroll");
+                }
+            }
+        
+            // Sayfa yüklendiğinde navbar şeffaf başlasın
+            updateNavbar();
+            
+            // Scroll olayını dinle
+            document.addEventListener("scroll", updateNavbar);
+        });
+        
+    </script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.headline');
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // İlk olarak "Hedef Hukuk Bürosu" yazısı belirsin
+            gsap.fromTo(".hero-text", 
+                { opacity: 0, y: 30 }, 
+                { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+            );
+    
+            // Sonsuz döngüde dönecek hukukla ilgili kelimeler
+            const keywords = ["Icra Iflas", "Bankacılık Finans", "Sirketler", "Gayrimenkul", "Idare Vergi", "Tüketici Is",];
+            const keywordContainer = document.getElementById("keywords-container");
+    
+            let tl = gsap.timeline({ repeat: -1 });
+    
+            keywords.forEach((word, index) => {
+                let span = document.createElement("span");
+                span.textContent = word;
+                span.classList.add("keyword");
+                keywordContainer.appendChild(span);
+    
+                tl.to(span, { 
+                    opacity: 1, 
+                    duration: 1, 
+                    ease: "power2.out"
+                }).to(span, { 
+                    opacity: 0, 
+                    duration: 1, 
+                    delay: 1, 
+                    ease: "power2.out"
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

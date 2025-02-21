@@ -1,0 +1,525 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-size: cover;
+        margin-top: 80px; /* Carousel'in biraz aşağı inmesini sağlar */ 
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+
+
+
+
+
+.logo-img {
+    height: 80px; /* Logoyu büyüttük */
+    margin-right: 10px; /* Yazı ile arasına boşluk bıraktık */
+}
+
+.logo-text {
+    font-size: 24px; /* Yazıyı büyüttük */
+    font-weight: bold;
+    font-family: 'Georgia', serif; /* Şık bir font kullandık */
+    color: #003366; /* Avukatlık için uygun bir mavi tonu */
+}
+.carousel-inner img {
+    max-height: 500px; /* Maksimum yükseklik belirledik */
+    object-fit: cover; /* Resmin oranlarını koruyarak sığdırır */
+}
+
+
+.team-leader {
+    width: 250px; /* Büyük resim */
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-member {
+    width: 200px; /* Diğer avukatların resimleri */
+    height: 200px;
+    object-fit: cover;
+    background-color: white;
+    padding: 10px; /* Kenarlardan biraz boşluk bırakır */
+    border-radius: 50%; /* Yuvarlak çerçeve için */
+}
+a {
+    text-decoration: none !important;
+}
+.fixed-size-img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar .navbar-brand .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/adaletresi.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Arka planı karartmak için */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Siyah filtre (%50 opaklık) */
+    z-index: 1;
+}
+
+/* Yazının üstte kalmasını sağlamak için */
+.hero-section > .text-center {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-sectioniletisim {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/iletisim.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-sectioniletisim::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Resmi %50 karartır, isteğe göre artırılabilir */
+}
+
+.hero-sectionekibimiz{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/ekibimiz.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    
+}
+.hero-sectionekibimiz::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Resmi %50 karartır, isteğe göre artırılabilir */
+}
+.hero-sectioncalisma{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/calisma.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    
+    
+}
+.hero-sectioncalisma::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Resmi %50 karartır, isteğe göre artırılabilir */
+}
+
+.hero-sectionhakkimizda{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/hakkimizda.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-sectionhakkimizda::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Resmi %50 karartır, isteğe göre artırılabilir */
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.hero-section p,
+.hero-section h6,
+.hero-section a {
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    padding: 10px 0; /* Navbar'ı incelt */
+}
+
+.navbar-brand img {
+    height: 50px; /* Logoyu küçültmek için */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Menü yazılarını büyüt */
+    font-weight: bold; /* Yazıları kalın yap */
+    padding: 10px 15px; /* Yazıların tıklama alanını düzenle */
+}
+
+.logo-text {
+    color: black; /* Başlangıçta siyah */
+    transition: color 0.5s ease-in-out;
+    font-size: 22px; /* Logo yanındaki yazıyı büyüt */
+}
+.logo-textiletisim {
+    color: white; /* Başlangıçta siyah */
+    transition: color 0.5s ease-in-out;
+    font-size: 22px; /* Logo yanındaki yazıyı büyüt */
+}
+
+.scroll .logo-text {
+    color: white !important; /* Navbar mavi olunca yazı beyaz olacak */
+}
+
+.navbar {
+    background-color: transparent !important;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.scroll {
+    background-color: rgb(9, 9, 50) !important;
+}
+
+
+.nav-link{
+    color: white !important;
+}
+.navbar-toggler{
+    background-color: white;
+}
+.btn-danger{
+    background-color:#091e68 ;
+    border-color: #091e68;
+    color: yellow;        
+}
+.btn-danger:hover{
+    background-color:yellow ;
+    border-color: #091e68;
+    color: white;
+}
+.scroll{
+   color: white;
+    background-color:rgb(9, 9, 50);
+}
+nav{
+transition: background-color 500ms linear;
+-webkit-transition: background-color 500ms linear;
+-ms-transition: background-color 500ms linear;
+
+border: none;
+}
+
+.social a i
+{
+display: inline-block;
+filter: invert(1);
+transform: scale(0.5);
+transition: 0.5s;
+color: rgb(40, 101, 214);
+}
+.social a i:hover
+{
+transform: scale(0.5) translateY(-15px);
+}
+
+.footer-container {
+    background-color:  rgb(9, 9, 50);
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.advantage-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 30px; /* Üstten boşluk */
+    margin-bottom: 30px; /* Alttan boşluk */
+}
+
+.advantage-box:hover {
+    background: #091232;
+    color: white;
+    transform: translateY(-10px);
+}
+
+.advantage-icon {
+    font-size: 50px;
+    color: #091232;
+    transition: all 0.3s ease-in-out;
+}
+
+.advantage-box:hover .advantage-icon {
+    color:  #77d4f4;
+    transform: scale(1.2);
+}
+
+h4 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Bölümün genel olarak üst ve alt boşluğunu artırdım */
+section.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* .bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+  
+  .tangerine-bold {
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .service-box {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.about-section {
+    position: relative;
+    padding: 80px 0;
+}
+
+/* Görsel Konteyner */
+.image-container {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-container img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Başlık ve Paragraf Animasyonu */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+}
+
+/* Buton Tasarımı */
+.custom-btn {
+    background-color: #77d4f4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: rgb(30, 30, 100);
+    transform: translateY(-3px);
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color:  #77d4f4 !important; /* İstediğin renge göre değiştirebilirsin */
+}
+
+
+.hero-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.keyword {
+    color:  #77d4f4 ;
+    font-size: 5rem;
+    font-weight: 500;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#keywords-container {
+    position: relative;
+    height: 50px; /* Kelimelerin görünmesi için sabit bir alan */
+    margin-top: 0px;
+}
+
+
+ /* Resim üzerine gelince etrafına mavi border ekle */
+ .team-member {
+    transition: border 0.3s ease; /* Sınırın geçişini yumuşat */
+}
+
+.team-member:hover {
+    border: 4px solid #77d4f4; /* Mavi renkli border */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Hafif gölge ekle */
+}
+
+ /* Ortalamak için genel ayarlar */
+ section {
+    text-align: center; /* Yazıları yatayda ortala */
+}
+
+section h2 {
+    margin-bottom: 20px; /* Başlık ile yazı arasına boşluk ekle */
+}
+
+section p {
+    max-width: 800px; /* Paragrafların çok geniş olmasını engelle */
+    margin: 0 auto; /* Paragrafları ortala */
+}
+
+section ul {
+    list-style-type: none; /* Liste madde işaretlerini kaldır */
+    padding: 0; /* Listeden ekstra boşlukları kaldır */
+}
+
+section ul li {
+    margin-bottom: 10px; /* Liste elemanları arasına boşluk ekle */
+    text-align: left; /* Listeyi sola hizala */
+    display: inline-block; /* Liste öğelerini yatayda sıralamak için */
+    width: 100%; /* Liste elemanlarının tamamını kapsayacak şekilde */
+}
+
