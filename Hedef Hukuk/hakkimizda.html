@@ -32,58 +32,64 @@
     </style>
 </head>
 <body>
-    <nav  class="scroll navbar text-center navbar-expand-lg navbar-light  fixed-top">
+    <nav class="scroll navbar text-center navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="image/hedefhukuklogo.png" alt="Hedef Hukuk" class="logo-img">
-                <span class="logo-text" style="color: #77d4f4;">Hedef Hukuk Bürosu</span>
-            </a>          
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="logo-text" style="color: #77d4f4;">Hedef Hukuk Ve Arabuluculuk Merkezi</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Ana Sayfa</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown">Kurumsal</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="hizmetler.html">Hizmetler</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="ekibimiz.html">Ekibimiz</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="iletisim.html">İletişim</a></li>
-
-                <!-- Borç Sorgulama (WhatsApp Hattı) -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white btn  px-3 d-flex align-items-center dropdown-toggle" 
-                       href="#" id="whatsappDropdown" role="button" data-bs-toggle="dropdown">
-                        <i class="fa-solid fa-coins me-2"></i> Borç Ödeme Hattı
-                    </a>                 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://wa.me/905555555555" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (555) 555 55 55 (Sidar Bey)</a></li>
-                        <li><a class="dropdown-item" href="https://wa.me/904444444444" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (444) 444 44 44</a></li>
-                        <li><a class="dropdown-item" href="https://wa.me/903333333333" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (333) 333 33 33</a></li>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-dark" href="index.html">Ana Sayfa</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown">Kurumsal</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="hizmetler.html">Hizmetler</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="ekibimiz.html">Ekibimiz</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="iletisim.html">İletişim</a></li>
+    
+                        <!-- Borç Sorgulama (WhatsApp Hattı) -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark btn  px-3 d-flex align-items-center dropdown-toggle" 
+                               href="#" id="whatsappDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-coins me-2"></i> Borç Ödeme Hattı
+                            </a>                 
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://wa.me/905555555555" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (555) 555 55 55 (Sidar Bey)</a></li>
+                                <li><a class="dropdown-item" href="https://wa.me/904444444444" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (444) 444 44 44</a></li>
+                                <li><a class="dropdown-item" href="https://wa.me/903333333333" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (333) 333 33 33</a></li>
+                            </ul>
+                        </li>
+    
+                        <!-- Telefon Numaraları Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark btn px-3 d-flex align-items-center dropdown-toggle" 
+                               href="#" id="telefonDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-phone me-2"></i> İletişim Hattı
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tel:+905555555555"><i class="fa-solid fa-phone me-2"></i> 0 (555) 555 55 55</a></li>
+                                <li><a class="dropdown-item" href="tel:+904444444444"><i class="fa-solid fa-phone me-2"></i> 0 (444) 444 44 44</a></li>
+                                <li><a class="dropdown-item" href="tel:+903333333333"><i class="fa-solid fa-phone me-2"></i> 0 (333) 333 33 33</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-
-                <!-- Telefon Numaraları Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white btn px-3 d-flex align-items-center dropdown-toggle" 
-                       href="#" id="telefonDropdown" role="button" data-bs-toggle="dropdown">
-                        <i class="fa-solid fa-phone me-2"></i> İletişim Hattı
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="tel:+905555555555"><i class="fa-solid fa-phone me-2"></i> 0 (555) 555 55 55</a></li>
-                        <li><a class="dropdown-item" href="tel:+904444444444"><i class="fa-solid fa-phone me-2"></i> 0 (444) 444 44 44</a></li>
-                        <li><a class="dropdown-item" href="tel:+903333333333"><i class="fa-solid fa-phone me-2"></i> 0 (333) 333 33 33</a></li>
-
-                    </ul>
-                </li>
-                </ul>
+                </div>
             </div>
         </div>
     </nav>
+    
     
     <section class="hero-sectionhakkimizda" id="home">
         <div class="text-center">
@@ -103,27 +109,50 @@
 
     <section class="container py-5">
         <h2>Biz Kimiz?</h2>
-        <p>Hedef Hukuk Bürosu, yılların verdiği deneyimle hukuki çözümler sunan köklü bir hukuk bürosudur. Müvekkillerimize en iyi hizmeti sunabilmek adına uzman ekibimizle birlikte çalışıyoruz.</p>
+        <p>Hedef Hukuk Bürosu, 1997 yılında kurulmuş olup, kurulduğu günden itibaren dünyadaki ve ülkemizdeki gelişmeleri yakından takip ederek, yenilikçi bir anlayışla müvekkillerine hizmet vermektedir.
+
+            Son yıllarda, Türkiye'ye farklı ülke ve kültürlerden insanların yerleşmeye başlamasıyla birlikte, müvekkil portföyümüz genişlemiş ve bu sosyolojik gelişme hukuk büromuzun etkinliğini artırmada önemli bir rol oynamıştır. Aileden ikinci nesil hukukçuların büromuzda çalışmaya başlamasıyla birlikte, tecrübe ve dinamizm uyum içinde harmanlanarak daha üretken ve etkili bir hukuk hizmeti sunulması sağlanmıştır.
+            
+            Adalet ve eşitlik ilkeleri ışığında, müvekkillerimizin sorunlarına en doğru çözümleri bulmayı amaçlıyor; insanî ve vicdanî değerleri gözeterek, etik ilkelerden taviz vermeden mesleğimizi icra ediyoruz.
+            
+            Takriben 28 yıllık tecrübemizin ardından geldiğimiz noktada, yapılması gereken daha çok şey olduğunun bilinciyle hareket ediyoruz. Bu bilinçle, meslek onurumuzu koruyarak, bilgi ve deneyimlerimizi bir sonraki nesillere aktarmayı en temel sorumluluklarımızdan biri olarak görüyoruz.
+            
+            
+
+        </p>
     </section>
     
     <section class="container py-5">
         <h2>Vizyonumuz</h2>
-        <p>Adaletin herkes için erişilebilir olması gerektiğine inanıyoruz. Müvekkillerimizin haklarını en iyi şekilde korumak ve hukuki süreçlerde onlara rehberlik etmek temel misyonumuzdur.</p>
+        <p>Hedef Hukuk Bürosu olarak, hukukun üstünlüğüne ve adaletin evrensel değerlerine bağlı kalarak, müvekkillerimize en güvenilir ve etkin hukuki hizmeti sunmayı amaçlıyoruz. Sürekli değişen ve gelişen hukuk sistemine uyum sağlayarak, hem yerel hem de uluslararası alanda güçlü bir hukuk ekolü oluşturmayı hedefliyoruz.
+
+            Müvekkillerimizin haklarını en iyi şekilde korumak için yenilikçi ve çözüm odaklı bir yaklaşım benimseyerek, hukuki süreçlerde hızlı, etkili ve etik değerlere bağlı bir hizmet sunuyoruz.
+            
+            Geleceğe yönelik vizyonumuz, hukuk dünyasındaki en güncel gelişmeleri takip ederek, bilgi ve deneyimlerimizi bir sonraki nesillere aktarmak ve sürdürülebilir bir hukuk anlayışıyla, adaletin her birey için erişilebilir olmasını sağlamaktır.</p>
     </section>
     
     <section class="container py-5">
         <h2>Misyonumuz</h2>
-        <p>Hukuki süreçlerde şeffaf, güvenilir ve etkili çözümler sunarak müvekkillerimizin yanında olmak. Adil yargı sistemine katkıda bulunarak hukukun üstünlüğünü savunmak.</p>
+        <p>Hedef Hukuk Bürosu olarak, adalet ve hakkaniyet ilkelerini temel alarak, müvekkillerimize en doğru ve güvenilir hukuki çözümleri sunmayı misyon edindik. Her bireyin ve kurumun hukuki haklarını en iyi şekilde savunarak, adil, şeffaf ve etik değerlere bağlı bir hizmet anlayışıyla hareket ediyoruz.
+
+            Müvekkillerimizin ihtiyaçlarına özel çözümler üretirken, hukukun evrensel ilkelerini ve güncel mevzuatları yakından takip ediyor, değişen hukuki süreçlere en hızlı ve etkili şekilde uyum sağlıyoruz.
+            
+            Topluma ve hukukun gelişimine katkıda bulunmayı, genç hukukçulara rehberlik ederek mesleki birikimimizi gelecek nesillere aktarmayı ve her zaman dürüst, etik ve kaliteli hizmet anlayışıyla sektörde fark yaratmayı amaçlıyoruz.
+            
+            </p>
     </section>
     
     <section class="container py-5">
         <h2>Değerlerimiz</h2>
         <p class="container">
            
-                <strong>Güven:</strong> Müvekkillerimizle aramızda güçlü bir güven bağı oluşturuyoruz. <br>
-                <strong>Şeffaflık:</strong> Hukuki süreçleri net ve anlaşılır şekilde aktarıyoruz. <br>
-                <strong>Uzmanlık:</strong> Alanında uzman avukat kadromuz ile en iyi hizmeti sunuyoruz. <br>
-                <strong>Etik:</strong> Hukukun etik kurallarına bağlı kalarak çalışıyoruz.
+            <strong>Adalet ve Hakkaniyet:</strong> Hukukun üstünlüğüne inanıyor, adaletin herkes için erişilebilir olmasını sağlamak adına çalışıyoruz. <br>
+            <strong>Dürüstlük ve Güven:</strong> Müvekkillerimizle ilişkilerimizi şeffaflık, güven ve etik ilkeler çerçevesinde yürütüyoruz. <br>
+            <strong>Profesyonellik ve Yetkinlik:</strong> Hukuki bilgi birikimimizi sürekli geliştirerek, her zaman en doğru ve güncel hukuki çözümleri sunuyoruz. <br>
+            <strong>Gizlilik ve Mahremiyet:</strong> Müvekkillerimizin haklarını korurken, tüm süreçlerde gizlilik ve mahremiyet ilkelerine bağlı kalıyoruz. <br>
+            <strong>Çözüm Odaklılık:</strong> Sorunları yalnızca tespit etmekle kalmayıp, en hızlı ve etkili çözümleri üretmeyi hedefliyoruz. <br>
+            <strong>Yenilikçilik ve Gelişim:</strong> Hukukun değişen dinamiklerine uyum sağlayarak, sürekli öğrenen ve gelişen bir yapıyı benimsiyoruz. <br>
+            <strong>Toplumsal Sorumluluk:</strong> Sadece bireylerin değil, toplumun genel hukuk bilincini geliştirmek için de sorumluluk alıyoruz. <br>
         </p>
     </section>
     

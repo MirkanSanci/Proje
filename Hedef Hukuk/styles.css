@@ -19,6 +19,12 @@ header {
 footer {
     background-color: #343a40;
     color: #fff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+        bottom: 0;
+        width: 100%;
 }
 
 
@@ -32,7 +38,7 @@ footer {
 }
 
 .logo-text {
-    font-size: 24px; /* Yazıyı büyüttük */
+    font-size: 1rem; /* Yazıyı büyüttük */
     font-weight: bold;
     font-family: 'Georgia', serif; /* Şık bir font kullandık */
     color: #003366; /* Avukatlık için uygun bir mavi tonu */
@@ -71,7 +77,7 @@ a {
 }
 
 .navbar .navbar-brand .logo-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -231,12 +237,12 @@ nav {
 .logo-text {
     color: black; /* Başlangıçta siyah */
     transition: color 0.5s ease-in-out;
-    font-size: 22px; /* Logo yanındaki yazıyı büyüt */
+    font-size: 1rem; /* Logo yanındaki yazıyı büyüt */
 }
 .logo-textiletisim {
     color: white; /* Başlangıçta siyah */
     transition: color 0.5s ease-in-out;
-    font-size: 22px; /* Logo yanındaki yazıyı büyüt */
+    font-size: 1rem; /* Logo yanındaki yazıyı büyüt */
 }
 
 .scroll .logo-text {
@@ -521,5 +527,24 @@ section ul li {
     text-align: left; /* Listeyi sola hizala */
     display: inline-block; /* Liste öğelerini yatayda sıralamak için */
     width: 100%; /* Liste elemanlarının tamamını kapsayacak şekilde */
+}
+
+/* Off-canvas menüsünün arka planını siyah yap */
+.offcanvas-start {
+    background-color: rgb(30, 30, 100) !important; /* Siyah arka plan */
+}
+
+/* Yazı rengini beyaz yapmak */
+.offcanvas-body {
+    color: #fff; /* Beyaz yazı rengi */
+}
+
+/* Menüdeki öğeler için de yazı rengini beyaz yap */
+.offcanvas-nav .nav-link {
+    color: #fff; /* Menü öğeleri beyaz olacak */
+}
+
+.offcanvas-nav .dropdown-menu .dropdown-item {
+    color: #fff; /* Dropdown menü öğeleri beyaz olacak */
 }
 

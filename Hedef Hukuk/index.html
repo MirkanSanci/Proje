@@ -70,55 +70,60 @@
 
 <body>
     
-    <nav  class="scroll navbar text-center navbar-expand-lg navbar-light  fixed-top">
+    <nav class="scroll navbar text-center navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="image/hedefhukuklogo.png" alt="Hedef Hukuk" class="logo-img">
-                <span class="logo-text" style="color: #77d4f4;">Hedef Hukuk Bürosu</span>
-            </a>          
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="logo-text" style="color: #77d4f4;">Hedef Hukuk Ve Arabuluculuk Merkezi</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Ana Sayfa</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown">Kurumsal</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="hizmetler.html">Hizmetler</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="ekibimiz.html">Ekibimiz</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="iletisim.html">İletişim</a></li>
-
-                <!-- Borç Sorgulama (WhatsApp Hattı) -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white btn  px-3 d-flex align-items-center dropdown-toggle" 
-                       href="#" id="whatsappDropdown" role="button" data-bs-toggle="dropdown">
-                        <i class="fa-solid fa-coins me-2"></i> Borç Ödeme Hattı
-                    </a>                 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://wa.me/905555555555" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (555) 555 55 55 (Sidar Bey)</a></li>
-                        <li><a class="dropdown-item" href="https://wa.me/904444444444" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (444) 444 44 44</a></li>
-                        <li><a class="dropdown-item" href="https://wa.me/903333333333" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (333) 333 33 33</a></li>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-dark" href="index.html">Ana Sayfa</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown">Kurumsal</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="hizmetler.html">Hizmetler</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="ekibimiz.html">Ekibimiz</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="iletisim.html">İletişim</a></li>
+    
+                        <!-- Borç Sorgulama (WhatsApp Hattı) -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark btn  px-3 d-flex align-items-center dropdown-toggle" 
+                               href="#" id="whatsappDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-coins me-2"></i> Borç Ödeme Hattı
+                            </a>                 
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://wa.me/905555555555" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (555) 555 55 55 (Sidar Bey)</a></li>
+                                <li><a class="dropdown-item" href="https://wa.me/904444444444" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (444) 444 44 44</a></li>
+                                <li><a class="dropdown-item" href="https://wa.me/903333333333" target="_blank"><i class="fa-brands fa-whatsapp me-2"></i> 0 (333) 333 33 33</a></li>
+                            </ul>
+                        </li>
+    
+                        <!-- Telefon Numaraları Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark btn px-3 d-flex align-items-center dropdown-toggle" 
+                               href="#" id="telefonDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-phone me-2"></i> İletişim Hattı
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tel:+905555555555"><i class="fa-solid fa-phone me-2"></i> 0 (555) 555 55 55</a></li>
+                                <li><a class="dropdown-item" href="tel:+904444444444"><i class="fa-solid fa-phone me-2"></i> 0 (444) 444 44 44</a></li>
+                                <li><a class="dropdown-item" href="tel:+903333333333"><i class="fa-solid fa-phone me-2"></i> 0 (333) 333 33 33</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-
-                <!-- Telefon Numaraları Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white btn px-3 d-flex align-items-center dropdown-toggle" 
-                       href="#" id="telefonDropdown" role="button" data-bs-toggle="dropdown">
-                        <i class="fa-solid fa-phone me-2"></i> İletişim Hattı
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="tel:+905555555555"><i class="fa-solid fa-phone me-2"></i> 0 (555) 555 55 55</a></li>
-                        <li><a class="dropdown-item" href="tel:+904444444444"><i class="fa-solid fa-phone me-2"></i> 0 (444) 444 44 44</a></li>
-                        <li><a class="dropdown-item" href="tel:+903333333333"><i class="fa-solid fa-phone me-2"></i> 0 (333) 333 33 33</a></li>
-
-                    </ul>
-                </li>
-                </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -275,7 +280,7 @@
             <div class="col-md-4">
                 <div class="advantage-box">
                     <i class="fas fa-user-shield advantage-icon"></i>
-                    <h4>Müvekkil Odaklı Yaklaşım</h4>
+                    <h4>İnsan Odaklı Yaklaşım</h4>
                     <p>Müvekkillerimizin haklarını en iyi şekilde savunmak için buradayız.</p>
                 </div>
             </div>
