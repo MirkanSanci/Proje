@@ -56,20 +56,32 @@ footer {
 }
 
 .team-member {
-    width: 200px; /* Diğer avukatların resimleri */
-    height: 200px;
-    object-fit: cover;
-    background-color: white;
-    padding: 10px; /* Kenarlardan biraz boşluk bırakır */
-    border-radius: 50%; /* Yuvarlak çerçeve için */
+   
+        width: 150px; /* Tüm resimleri aynı genişliğe getir */
+        height: 150px; /* Yüksekliği de aynı yap */
+        object-fit: cover; /* Resmin orantılı kırpılmasını sağlar */
+        border-radius: 50%; /* Yuvarlak şekil verir */
+        display: block; /* Ortalamayı düzgün yapar */
+        margin: 0 auto 10px; /* Ortalamak için */
+  
+}
+.team-member1 {
+   
+    width: 150px; /* Tüm resimleri aynı genişliğe getir */
+    height: 150px; /* Yüksekliği de aynı yap */
+    object-fit: cover; /* Resmin orantılı kırpılmasını sağlar */
+    border-radius: 50%; /* Yuvarlak şekil verir */
+    display: block; /* Ortalamayı düzgün yapar */
+    margin: 0 auto 10px; /* Ortalamak için */
+
 }
 a {
     text-decoration: none !important;
 }
 .fixed-size-img {
-    width: 100%;
-    height: 420px;
-    object-fit: contain;
+    width: 85%; /* Resimlerin genişliği %100 olacak */
+    height: 100%; /* Resimlerin yüksekliği 420px olacak */
+    object-fit: cover; /* Resimler kutuya sığacak şekilde kırpılacak */
 }
 
 .navbar {
@@ -225,11 +237,11 @@ nav {
 }
 
 .navbar-brand img {
-    height: 50px; /* Logoyu küçültmek için */
+    height: 65px; /* Logoyu küçültmek için */
 }
 
 .navbar-nav .nav-link {
-    font-size: 18px; /* Menü yazılarını büyüt */
+    font-size: 17px; /* Menü yazılarını büyüt */
     font-weight: bold; /* Yazıları kalın yap */
     padding: 10px 15px; /* Yazıların tıklama alanını düzenle */
 }
@@ -493,16 +505,6 @@ section.container {
 }
 
 
- /* Resim üzerine gelince etrafına mavi border ekle */
- .team-member {
-    transition: border 0.3s ease; /* Sınırın geçişini yumuşat */
-}
-
-.team-member:hover {
-    border: 4px solid #77d4f4; /* Mavi renkli border */
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Hafif gölge ekle */
-}
-
  /* Ortalamak için genel ayarlar */
  section {
     text-align: center; /* Yazıları yatayda ortala */
@@ -531,7 +533,7 @@ section ul li {
 
 /* Off-canvas menüsünün arka planını siyah yap */
 .offcanvas-start {
-    background-color: rgb(30, 30, 100) !important; /* Siyah arka plan */
+    background-color: #091232 !important; /* Siyah arka plan */
 }
 
 /* Yazı rengini beyaz yapmak */
@@ -548,3 +550,90 @@ section ul li {
     color: #fff; /* Dropdown menü öğeleri beyaz olacak */
 }
 
+.akbank-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    max-width: 250px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.akbank-logo:hover {
+    filter: none;
+}
+
+.modal-body p, .modal-body li{
+    color: #000; /* Siyah renk */
+}
+
+.team-member {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease; /* Transform, filtre ve arka plan rengi geçişi */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    filter: hue-rotate(50deg);
+    background-color: rgb(9, 9, 50); /* Arka plan rengini ekledik */
+    box-shadow: 0 0 10px #a7e7fa;
+}
+
+.value-item {
+    display: inline-block; /* İkon ve metnin yan yana durmasını sağlar */
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 5px; /* Hafif yuvarlak köşeler */
+    transition: background-color 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+
+.value-item i {
+    margin-right: 0.5rem; /* İkon ile metin arasında boşluk */
+    color: #007bff; /* İkon rengi (isteğe göre değiştirilebilir) */
+}
+
+.modal-body{
+    color: black;
+}
+
+
+    /* Mevcut stilleriniz burada */
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    /* --- YENİ EKLENEN MOBİL NAVBAR STİLLERİ --- */
+    @media (max-width: 767.98px) {
+      .navbar-brand .logo-text {
+        font-size: 13px; /* Mobil için daha küçük bir yazı boyutu */
+        margin-left: 8px;
+        vertical-align: middle; /* Yazıyı dikeyde ortalamak için */
+      }
+      .navbar-brand .logo-img {
+         height: 30px;
+         width: auto;
+         vertical-align: middle; /* Logoyu dikeyde ortalamak için */
+       }
+       /* Marka alanının dikey hizalamasını iyileştirme */
+       .navbar-brand {
+         display: flex;
+         align-items: center; /* Dikey hizalama için flexbox kullan */
+       }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .navbar-brand .logo-text {
+           font-size: 15px; /* Tabletler için orta boyut */
+           margin-left: 10px;
+       }
+    }
+    /* --- MOBİL NAVBAR STİLLERİ SONU --- */
